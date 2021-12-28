@@ -7,11 +7,11 @@ import { delContact } from 'redux/contacts/contacts-operations';
 function ContactList({ items }) {
   const dispatch = useDispatch();
 
-  const contactsList = items.map(({ id, name, phone }) => (
+  const contactsList = items.map(({ id, name, number }) => (
     <li className={styles.item} key={id}>
       <div>
         <span className={styles.item_text}>
-          {name}: {phone}
+          {name}: {number}
         </span>
         <button
           className={styles.item_button}
@@ -33,7 +33,7 @@ ContactList.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      phone: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
 };
