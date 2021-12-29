@@ -2,6 +2,7 @@ bodY {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #abf8f8;
 }
 .center {
   display: flex;
@@ -12,7 +13,7 @@ bodY {
 .wave {
   width: 5px;
   height: 70px;
-  background: linear-gradient(45deg, cyan, #fff);
+  background: linear-gradient(45deg, rgb(235, 235, 44), rgb(6, 12, 102));
   margin: 10px;
   animation: wave 1s linear infinite;
   border-radius: 20px;

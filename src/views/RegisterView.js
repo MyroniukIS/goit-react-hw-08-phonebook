@@ -32,11 +32,14 @@ export default function RegisterView() {
 
   return (
     <div className={styles.form_wrap}>
-      <h1>REGISTER AND GET YOUR PERSONAL PHONEBOOK!!!</h1>
+      <h1 className={styles.title}>
+        REGISTER AND GET YOUR PERSONAL PHONEBOOK!!!
+      </h1>
       <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={styles.label}>
           Name
           <input
+            className={styles.input}
             type="text"
             name="name"
             value={name}
@@ -46,6 +49,7 @@ export default function RegisterView() {
         <label className={styles.label}>
           Email
           <input
+            className={styles.input}
             type="email"
             name="email"
             value={email}
@@ -55,13 +59,16 @@ export default function RegisterView() {
         <label className={styles.label}>
           Password
           <input
+            className={styles.input}
             type="password"
             name="password"
             value={password}
             onChange={handleChange}
           ></input>
         </label>
-        <button type="submit">REGISTER</button>
+        <button className={styles.button} type="submit">
+          REGISTER
+        </button>
       </form>
     </div>
   );

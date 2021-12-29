@@ -8,6 +8,7 @@ import PublicRoute from './components/PublicRoute';
 import AppBar from 'components/AppBar/AppBar';
 import { fetchCurrentUser } from 'redux/auth/auth-operations';
 import { getIsFetchingCurrent } from 'redux/auth/auth-selectors';
+import Loader from './components/Loader/Loader';
 const HomeView = lazy(() => import('./views/HomeView'));
 const LoginView = lazy(() => import('views/LoginView'));
 const RegisterView = lazy(() => import('views/RegisterView'));
@@ -23,11 +24,20 @@ export default function App() {
 
   return (
     !isFetchingCurrentUser && (
-      <>
+      <div>
         <AppBar />
         <div>
           <Switch>
-            <Suspense fallback={<p>Loading...</p>}>
+            {/* {<p>Loading...</p>} */}
+            <Suspense
+              fallback={
+                <div>
+                  <div>
+                    <Loader />
+                  </div>
+                </div>
+              }
+            >
               <PublicRoute exact path="/">
                 <HomeView />
               </PublicRoute>
@@ -48,7 +58,7 @@ export default function App() {
             </Suspense>
           </Switch>
         </div>
-      </>
+      </div>
     )
   );
 }

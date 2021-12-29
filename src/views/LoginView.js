@@ -29,11 +29,12 @@ const LoginView = () => {
 
   return (
     <div className={styles.form_wrap}>
-      <h1>LOGIN TO YOUR PERSONAL PHONEBOOK!!!</h1>
+      <h1 className={styles.title}>LOGIN TO YOUR PERSONAL PHONEBOOK!!!</h1>
       <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={styles.label}>
           Email
           <input
+            className={styles.input}
             type="email"
             name="email"
             value={email}
@@ -43,13 +44,16 @@ const LoginView = () => {
         <label className={styles.label}>
           Password
           <input
+            className={styles.input}
             type="password"
             name="password"
             value={password}
             onChange={handleChange}
           ></input>
         </label>
-        <button type="submit">LOGIN</button>
+        <button className={styles.button} type="submit">
+          LOGIN
+        </button>
       </form>
     </div>
   );

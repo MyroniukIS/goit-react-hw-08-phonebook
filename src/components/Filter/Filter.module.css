@@ -4,21 +4,27 @@
   padding: 10px;
   font-size: 20px;
   font-weight: 700;
-  color: rgb(3, 54, 48);
+  color: #0a0063;
 }
 .filter_input {
+  border: none;
+  background-color: rgba(32, 9, 9, 0.192);
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   padding: 5px;
+
   width: 200px;
   height: 30px;
   border: none;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  background-color: rgb(95, 158, 160);
+
   font-size: 18px;
   color: aliceblue;
   margin-left: 10px;
   margin-right: auto;
 }
+
+.filter_input:hover,
 .filter_input:focus {
-  outline: 2px solid rgb(243, 184, 56);
+  border: 1px solid rgb(240, 252, 80);
 }

@@ -2,4 +2,5 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  background: linear-gradient(360deg, #abf8f8, #0a3e7a);
 }
