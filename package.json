@@ -2,7 +2,6 @@
   "name": "goit-react-hw-08-phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myroniukis.github.io/goit-react-hw-08-phonebook",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.0",
     "@testing-library/jest-dom": "^5.14.1",
@@ -30,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
+    "deploy": "netlify deploy -p",
     "predeploy": "npm run build",
     "prepare": "husky install"
   },
