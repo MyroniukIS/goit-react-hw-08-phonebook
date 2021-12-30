@@ -1,8 +1,9 @@
 .container {
   min-height: calc(100vh - 50px);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #abf8f8;
 }
 .title {
@@ -10,4 +11,8 @@
   font-size: 48;
   text-align: center;
   color: #0a0063;
+  margin-bottom: 20px;
+}
+.main_img {
+  width: 400px;
 }
